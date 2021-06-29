@@ -1,9 +1,10 @@
 .main {
-    max-width: 1600px;
+
     width: 100%;
     margin: 0 auto;
     font-family: 'Cabin', sans-serif;
     /*font-family: 'Zilla Slab Highlight', cursive;*/
+    background-color: #e3e3e3;
 }
 .wrapper {
     padding: 0px 163px 0px 163px;
@@ -12,11 +13,17 @@
 .background {
     background: url("../imgs/background.png") no-repeat center top fixed;
     background-size: cover;
-    padding-top: 40px;
-    padding-bottom: 129px;
+    padding-bottom: 90px;
 }
+.menu{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 999;
 
+}
 .header-main-menu {
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,36 +39,42 @@
 .header-main-menu-items-item {
     margin-right: 80px;
     font-weight: bold;
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 20px;
     color: #FFFFFF;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     opacity: .9;
     cursor: pointer;
+    text-decoration: none;
 }
 
+.header-main-menu-items-item:hover {
+transform: scale(1.2);
+}
+.insta:hover {
+    transform: scale(1.2);
+}
 
 .header-logo {
     display: flex;
     flex-direction: column;
-    margin-top: 120px;
+    margin-top: 90px;
 }
 .header-logo-text {
     font-family: 'Zilla Slab Highlight';
     font-weight: bold;
-    font-size: 82px;
-    line-height: 98px;
+    font-size: 50px;
+    line-height: 60px;
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(4px);
     width: fit-content;
 }
 .header-text {
-    margin-top: 80px;
-    width: 562px;
+    margin-top: 90px;
+    width: 400px;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 26px;
 
     color: #FFFFFF;
 
@@ -69,12 +82,36 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.header-btn-conteiner {
+    position: absolute;
+    width: 100%;
+}
+
 .header-btn {
-    margin-top: 80px;
+    position: relative;
+    top: -37px;
+    left: calc((100% - 322px)/2);
     width: 322px;
     height: 75px;
     font-weight: bold;
     font-size: 28px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.header-btn-btn {
+    margin-top: 90px;
+    width: 322px;
+    height: 75px;
+    font-weight: bold;
+    font-size: 28px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.header-btn-btn:hover {
+    transform: scale(1.1);
+}
+.contacts-bar_position {
+    margin-top: 70px;
 }
 .contacts-bar {
     display: flex;
@@ -82,43 +119,95 @@
     justify-content: space-between;
     font-weight: bold;
     font-size: 26px;
-    margin-top: 36px;
-
 }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     margin-top: 130px;
 }
 .gallery-img {
     margin-bottom: 30px;
-}
-.main-background {
-    background: black;
-    padding-top: 160px;
-    padding-bottom: 80px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
+.gallery-img:hover{
+    transform: scale(1.1);
+
+}
+.gallery-btn {
+    margin-left: calc((100% - 322px)/2);
+    margin-bottom: 30px;
+    width: 322px;
+    height: 75px;
+    font-weight: bold;
+    font-size: 28px;
+    cursor: pointer;
+}
+.gallery-btn:hover {
+    transform: scale(1.1);
+}
+
+.main-background {
+    background: url("../imgs/cyclist_tattoo.jpg") no-repeat center top fixed;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+
 .main-text {
     font-weight: bold;
     font-size: 67px;
     line-height: 81px;
     color: #FFFFFF;
+    margin-bottom: 50px;
 }
+
 .main-content {
     display: flex;
     flex-direction: row;
 }
+
 .main-content-conteiner {
     padding-top: 40px;
 }
+
 .main-content-conteiner-text {
+    width: 50%;
     font-size: 32px;
     line-height: 39px;
     color: #FFFFFF;
 }
+
+.main-block-imgs{
+    position: relative;
+}
+
+.main-block-imgs-img {
+    border: solid #666666 1px;
+}
+
+.main-block-imgs-img__1{
+    position: absolute;
+    right: 250px;
+    top: 50px;
+}
+
+.main-block-imgs-img__2{
+    position: absolute;
+    top: 180px
+}
+
+/*.main-block-imgs-img__3 {*/
+/*    position: absolute;*/
+/*}*/
+
+
+
+
+
 .contacts-bar_color {
     color: #FFFFFF;
 }
@@ -138,5 +227,47 @@
 }
 .footer-content-contacts-text {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 30px;
+}
+
+.copy-footer-conteiner {
+    background-color: black;
+
+}
+.copy-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.copy-footer-text{
+    color: #666666;
+}
+
+.button-up {
+    display: inline-block;
+    background-color: #353A3D;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.button-up::after {
+    content: "\21E7";
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    color: #fff;
+}
+.show {
+    display: none;
 }
